@@ -38,6 +38,18 @@ L'environnement est basé sur le travail de Paul Swenson accesible ici : https:/
 
 ## DQL
 
+Deep Q-Learning (DQL) avec  epsilon-greedy est un algorithme de reinforcement learning populaire combinant Q-learning et l'epsilon-greedy policy.
+Cette algorithme utilise un agent pour apprendre l'action optimal à choisir dans un environnement basé sur un processus de décision Markovien.
+
+1- Initialisation:
+  - Initialiser le réseaux avec des poids et biais aléatoire
+  - Initialiser la Memory Replay
+  - Définir les Hyperparamètres
+    
+2- Intéraction agent-environnement:
+  - L'agent recoit une observation de l'environnement à chaque step
+  - Avec une probabilité &espilon;
+
 
 
 

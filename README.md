@@ -1,10 +1,11 @@
 # Q_Learning_simple
 
-Implémentation d'un environnement customisé et application de la Deep-Q-Learning pour détèrminer une policy pour résoudre le jeux
+Implémentation d'un environnement personnalisé et application du Deep Q-Learning pour déterminer une policy pour résoudre le jeu.
 
 ## Environnement 
-L'environnement sera hérité de la librairie gym créer par openIA , que l'on peut retrouver ici : https://www.gymlibrary.dev/ et installer avec la commande **pip install gym** ,
-Il est composé d'un terrain carré de taille 6x6 initialisé par des cases vide numéroté par des 0 de code couleur blanc , un Agent représentant le joueur numéroté par un 1 de code couleur Bleu avec une position de départ aléatoire, et la position de victoire représenté par un 2 de code couleur vert à la position (35,35).
+
+L'environnement sera basé sur la librairie gym créer par openIA , que l'on peut retrouver ici : https://www.gymlibrary.dev/ et installer avec la commande **pip install gym** ,
+Il est composé d'un terrain carré de taille 6x6 initialisé par des cases vides numérotées par des 0 de couleur blanche, un agent représentant le joueur numéroté par un 1 de couleur bleue avec une position de départ aléatoire, et la position de victoire représentée par un 2 de couleur verte à la position (3,5).
 
 Représentation d'un état 
 
@@ -20,15 +21,15 @@ L'agent peut éffectuer 4 actions :
 
 L'objectif est de partir d'une position de départ aléatoire en **Bleu** et de rejoindre la position de victoire en **Vert** en un certain nombre de coup X.
 
-Le système de récompense est définie comme suit:
+Le système de récompense est défini comme suit:
 - Si l'agent reste sur la même position il gagne -0,5 point
-- Si l'agent n'atteint pas la position de victoire en moins de X coup il gagne -2 points
-- Si l'agent atteint la position de victoire en moins de X coup il gagne 1 point
-- De plus pour encouragé l'agent à explorer il gagne 0.01 point pour un déplacement
+- Si l'agent n'atteint pas la position de victoire en moins de X coups il gagne -2 points
+- Si l'agent atteint la position de victoire en moins de X coups il gagne 1 point
+- De plus pour encourager l'agent à explorer, il gagne 0.01 point pour un déplacement
 
-Le jeux s'arrete si l'agent atteint la position de victoire en moins de X coup ou si l'agent n'atteint pas la position de victoire en moins de X coup
+Le jeux s'arrete si l'agent atteint la position de victoire en moins de X coups ou si l'agent n'atteint pas la position de victoire en moins de X coups.
 
-L'environnement est défini dans la classe *BasicEnv()* doté de plusieurs méthode:
+L'environnement est défini dans la classe *BasicEnv()* doté de plusieurs méthodes:
 - *__init__* qui initialise l'état du jeux (position du joeur, terrain, action,...)
 - *__step__* qui éffectue une action parmi les 4 définie
 - *__reset__* qui va réinitialisé le jeux apres victoire ou défaite

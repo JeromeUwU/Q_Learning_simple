@@ -70,7 +70,7 @@ Cette algorithme utilise un agent pour apprendre l'action optimal à choisir dan
 
 8- Mise à jour du Target-Network:
 
-9- Repeter les opérations 2-8 pour un certains nombre d'épisode
+9- Repeter les opérations 2-8 pour un certains nombres d'épisodes
 
 
 

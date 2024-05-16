@@ -42,13 +42,35 @@ Deep Q-Learning (DQL) avec  epsilon-greedy est un algorithme de reinforcement le
 Cette algorithme utilise un agent pour apprendre l'action optimal à choisir dans un environnement basé sur un processus de décision Markovien.
 
 1- Initialisation:
-  - Initialiser le réseaux avec des poids et biais aléatoire
+  - Initialiser le Q-Network et Target-Network avec des poids et biais aléatoire
   - Initialiser la Memory Replay
   - Définir les Hyperparamètres
     
 2- Intéraction agent-environnement:
-  - L'agent recoit une observation de l'environnement à chaque step
-  - Avec une probabilité ε sélectionner une action aléatoire *a_{t}*
+  - L'agent recoit une observation *o* de l'environnement à chaque step
+  - Avec une probabilité ε sélectionner une action aléatoire *a* sinon choisir l'action avec la plus grande Q-value.
+
+3- Executer l'action:
+  - Esexuter l'action *a* et observer la récompence *r* et le nouvel états *o_2*
+
+4- Sauvgarder l'expérience:
+  - Sauvgarder (*o*,*a*,*r*,*o_2*) dans la replay memory
+    
+5- Mini-Batch:
+  - Mélanger un mini-batch d'éxpériences (*o*,*a*,*r*,*o_2*) dans la replay memory
+
+6- Calcule de la target Q-Value:
+  - Pour tout éxpérience (*o*,*a*,*r*,*o_2*) dans le mini-batch calculer la target Q-Value
+    
+7- Mise à jour du réseau:
+  - Calcule de la loss entre predicted Q-values et target Q-values
+  - Optimisation du réseau par descente de gradient
+
+8- Mise à jour du Target-Network:
+
+9- Repeter les opérations 2-8 pour un certains nombre d'épisode
+
+
 
 
 

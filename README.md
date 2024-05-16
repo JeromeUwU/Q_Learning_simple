@@ -4,4 +4,4 @@ Implémentation d'un environnement customisé et application de la Deep-Q-Learni
 
 ## Environnement 
 L'environnement sera hérité de la librairie gym créer par openIA , que l'on peut retrouver ici : https://www.gymlibrary.dev/ et installer avec la commande **pip install gym** ,
-Il est composé d'un terrain carré de taille 6x6 
+Il est composé d'un terrain carré de taille 6x6 initialisé par des cases vide numéroté par des 0 , un Agent représentant le joueur numéroté par un 1, et la position de victoire représenté par un 2

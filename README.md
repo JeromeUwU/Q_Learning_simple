@@ -34,7 +34,13 @@ L'environnement est défini dans la classe *BasicEnv()* doté de plusieurs méth
 - *__reset__* qui va réinitialisé le jeux apres victoire ou défaite
 - *__render__* pour visualisé le jeux
 
-L'environnement est basé sur le travail de Paul Swenson accecible ici : https://github.com/PaulSwenson2/ReinforcementLearningProjects/blob/main/BasicEnvironment/BasicEnvironment.py
+L'environnement est basé sur le travail de Paul Swenson accesible ici : https://github.com/PaulSwenson2/ReinforcementLearningProjects/blob/main/BasicEnvironment/BasicEnvironment.py
+
+## DQL
+
+
+
+
 
 
 

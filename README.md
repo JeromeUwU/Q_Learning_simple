@@ -48,7 +48,7 @@ Cette algorithme utilise un agent pour apprendre l'action optimal à choisir dan
     
 2- Intéraction agent-environnement:
   - L'agent recoit une observation de l'environnement à chaque step
-  - Avec une probabilité &espilon;
+  - Avec une probabilité Greek small letter epsilon 
 
 
 

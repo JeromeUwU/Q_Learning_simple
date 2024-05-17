@@ -72,6 +72,8 @@ Cette algorithme utilise un agent pour apprendre l'action optimal à choisir dan
 
 9- Repeter les opérations 2-8 pour un certains nombres d'épisodes
 
+Pour plus d'information sur le méchanisme théorique de la Q-learning : https://en.wikipedia.org/wiki/Q-learning
+Pour plus d'information sur le méchanisme théorique de l'epsilon-greedy : Sutton, R. S. & Barto, A. G. 1998 Reinforcement learning: an introduction. Cambridge, MA: MIT Press.
 
 
 
